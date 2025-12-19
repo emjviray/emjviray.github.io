@@ -51,14 +51,32 @@ a:hover {
 .home-name {
   font-size: 22px;
 }
-/* Remove theme header (site title) and divider */
+/* Hide common Jekyll theme headers + wrappers */
 header,
 .site-header,
-.page-header {
+.page-header,
+header[role="banner"],
+.masthead,
+.page-title,
+.site-title,
+.project-name,
+.project-tagline,
+nav,
+footer {
   display: none !important;
 }
 
-/* Remove horizontal rule under header */
-hr {
+/* Hide the top horizontal rule lines some themes add */
+hr,
+.header,
+.header-line,
+.divider {
   display: none !important;
 }
+
+/* Remove extra top padding/margins left behind */
+main, .main-content, .container, .wrapper, .page-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
