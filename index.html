@@ -6,69 +6,63 @@
   <title>emjviray</title>
 
   <style>
-  body {
-    margin: 0;
-    height: 100vh;
-    font-family: "Times New Roman", Times, serif;
-    background: #ffffff;
-    color: #000000;
-  }
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: "Times New Roman", Times, serif;
+      background: #ffffff;
+      color: #000000;
+    }
 
-  .container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-  }
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  /* Header nav — centered horizontally, positioned higher */
-  .nav {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 28px;
-    text-align: center;
-    white-space: nowrap;
-  }
+    /* Top navigation (larger, higher) */
+    .nav {
+      margin-top: 200px;
+      font-size: 28px;
+      text-align: center;
+    }
 
-  .nav a {
-    color: #000;
-    text-decoration: none;
-  }
+    .nav a {
+      color: #000;
+      text-decoration: none;
+    }
 
-  .nav a:hover {
-    text-decoration: underline;
-  }
+    .nav a:hover {
+      text-decoration: underline;
+    }
 
-  /* Name — centered horizontally, positioned lower */
-  .name {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-    text-align: center;
-  }
+    /* Name (smaller, lower) */
+    .name {
+      margin-top: 260px;
+      font-size: 14px;
+      text-align: center;
+    }
 
-  .name a {
-    color: #000;
-    text-decoration: none;
-  }
+    .name a {
+      color: #000;
+      text-decoration: none;
+    }
 
-  .name a:hover {
-    text-decoration: underline;
-  }
-</style>
+    .name a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
 
     <div class="nav">
-  <span><a href="experience.html">Experience</a></span>
-  <span><a href="leadership.html">Leadership</a></span>
-  <span><a href="projects.html">Projects</a></span>
-</div>
+      <a href="experience.html">Experience</a> |
+      <a href="leadership.html">Leadership</a> |
+      <a href="projects.html">Projects</a>
+    </div>
 
     <div class="name">
       <a href="about.html">emjviray</a>
@@ -77,4 +71,3 @@
   </div>
 </body>
 </html>
-
