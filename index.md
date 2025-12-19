@@ -1,3 +1,5 @@
+theme: jekyll-theme-minimal
+
 # Emj Viray
 
 UC San Diego student studying Cognitive Science (Machine Learning & Neural Computation).  
