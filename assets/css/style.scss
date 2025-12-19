@@ -79,4 +79,26 @@ main, .main-content, .container, .wrapper, .page-content {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
+/* Homepage layout to match your template */
+.home-wrap {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* nav higher + larger */
+.home-nav {
+  margin-top: 200px;      /* move nav higher/lower */
+  font-size: 28px;        /* bigger nav text */
+  letter-spacing: 0.01em;
+}
+
+/* name lower + smaller */
+.home-name {
+  margin-top: 220px;      /* spacing between nav and name */
+  font-size: 16px;        /* smaller name */
+}
+
 
