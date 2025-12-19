@@ -8,7 +8,7 @@
   </div>
 
   <div style="font-size: 22px;">
-    <a href="/about" style="text-decoration: none;">emjviray</a>
+    <a href="/about" style="text-decoration: none;">Emmanuel</a>
   </div>
 
 </div>
