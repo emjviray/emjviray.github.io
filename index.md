@@ -1,6 +1,6 @@
 
 
-<div class="home-center">
+<div class="home-wrap">
 
   <div class="home-nav">
     <a href="/experience">Experience</a> |
@@ -9,7 +9,7 @@
   </div>
 
   <div class="home-name">
-    <a href="/about">Emmanuel</a>
+    <a href="/about">emjviray</a>
   </div>
 
 </div>
