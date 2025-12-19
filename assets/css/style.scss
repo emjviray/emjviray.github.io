@@ -51,3 +51,14 @@ a:hover {
 .home-name {
   font-size: 22px;
 }
+/* Remove theme header (site title) and divider */
+header,
+.site-header,
+.page-header {
+  display: none !important;
+}
+
+/* Remove horizontal rule under header */
+hr {
+  display: none !important;
+}
