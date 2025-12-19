@@ -1,10 +1,3 @@
-title: Emj Viray
-description: 
-theme: jekyll-theme-minimal
-
----
-layout: default
----
 
 <div style="text-align: center; margin-top: 120px;">
 
