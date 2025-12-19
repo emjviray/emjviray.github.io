@@ -8,9 +8,9 @@
     body {
       margin: 0;
       height: 100vh;
+      font-family: "Times New Roman", Times, serif;
       background: #000000;
       color: #ffffff;
-      font-family: "Times New Roman", Times, serif;
     }
 
     .container {
@@ -18,19 +18,37 @@
       height: 100vh;
       width: 100%;
     }
-    .nav {
-      margin-top: 100px;
+
+    /* ABOUT title (white, no underline) */
+    .about-title {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
       font-size: 28px;
-      text-align: center;
       color: #ffffff;
       text-decoration: none;
     }
 
-    /* Name — SAME size + position as homepage */
+    /* Small image behind the name */
+    .image-behind {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 260px;          /* controls image size */
+      opacity: 0.6;          /* subtle */
+      z-index: 0;
+    }
+
+    /* Name (unchanged size & position) */
     .name {
-      margin-top: 260px;
-      font-size: 20px;
-      text-align: center;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px;
+      z-index: 1;
     }
 
     .name a {
@@ -45,13 +63,18 @@
 </head>
 
 <body>
-    <div class="nav">
-      <a href="index.html"> About</a> 
-    </div>
   <div class="container">
-    <div class="name">
-      <a href="index.html">emjviray</a>
+
+    <div class="about-title">
+      About
     </div>
+
+    <img src="about.jpg" alt="" class="image-behind" />
+
+    <div class="name">
+      <a href="index.html">← emjviray</a>
+    </div>
+
   </div>
 </body>
 </html>
