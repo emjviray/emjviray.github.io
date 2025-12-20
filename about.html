@@ -25,15 +25,23 @@
     .about-content {
   max-width: 600px;
   margin: 0 auto;
-  padding: 120px 20px;
+  padding: 20px 0px 140px 60px;
   font-size: 15px;
   line-height: 1.7;
   text-align: left;
 }
-    .hero {
+  .hero {
   position: relative;
   height: 100vh;
   text-align: center;
+
+  /* Push the whole hero down */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 80px; /* adjust this to move lower/higher */
+}
+
 }
 
 .name {
