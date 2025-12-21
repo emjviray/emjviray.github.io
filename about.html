@@ -6,22 +6,25 @@
   <title>emjviray</title>
 
   <style>
-    .thank-you {
-  display: block;
-  margin-top: 14px;
-  font-size: 12px;
-  opacity: 0.8;
-  text-decoration: none;
+    .thank-you-fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
 }
-
-.thank-you:hover {
+.thank-you-fixed a {
+  font-size: 12px;
+  opacity: 0.75;
+  text-decoration: none;
+  color: white;
+}
+.thank-you-fixed a:hover {
   opacity: 1;
   text-decoration: underline;
 }
     body {
   position: relative;
 }
-
 /* Floating image */
 .floating-image {
   position: absolute;
@@ -238,6 +241,11 @@
       <p><a href="https://open.spotify.com/..." target="_blank">Spotify</a></p>
     </div>
   </div>
+<div class="thank-you-fixed">
+  <a href="https://youtu.be/OBg9mSIqLRE" target="_blank">
+    Thank you for your time.
+  </a>
+</div>
 
 </body>
 </html>
