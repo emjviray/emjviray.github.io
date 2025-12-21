@@ -61,18 +61,18 @@
   z-index: 0;
   pointer-events: none;
 }
-
+.fixed-collage{
+  position: fixed;
+  left: 50%;
+  top: 62%;                 /* move up/down in the empty space */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;     /* lets you click links through it */
+}
 .fixed-collage img{
-  width: 520px;
-  max-width: 45vw;
+  width: 520px;             /* collage size */
   height: auto;
   display: block;
-}
-.info {
-  margin-top: 220px;
-  font-size: 13px;
-  line-height: 1.6;
-  text-align: center;
 }
     /* Name (smaller, lower) */
     .name {
@@ -202,18 +202,6 @@
       Pimp Tobi
     </p>
 </div>
-<body>
-
-  <!-- your page content here... -->
-
-  <!-- Put this at the very bottom of <body> -->
-  <div class="fixed-collage">
-    <img src="Web_Photo_Editor.jpg" alt="Life collage">
-  </div>
-
-</body>
-
-
 
   </div>
 </body>
@@ -226,5 +214,17 @@
                 <p><a href="5106502646">Discord</a></p>
   <p><a href="mailto:emmanuelviray@gmail.com">Spotify</a></p>
 </div>
+<body>
 
+  <!-- Collage pinned in the empty black space -->
+  <div class="fixed-collage">
+    <img src="Web_Photo_Editor.jpg" alt="Life collage">
+  </div>
+
+  <!-- Your normal page content -->
+  <div class="about-content">
+    <!-- all your text, sports teams, music artists, etc -->
+  </div>
+
+</body>
 </html>
