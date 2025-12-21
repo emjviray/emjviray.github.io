@@ -17,16 +17,17 @@
       background: #000000;
       color: #ffffff;
     }
-    .center-image {
+    #life-collage {
   position: fixed;
   left: 50%;
-  top: 62%;
+  top: 60%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 0;
+  pointer-events: none;
 }
 
-.center-image img {
-  width: 420px;   /* adjust size here */
+#life-collage img {
+  width: 620px;   /* BIGGER */
   height: auto;
 }
     /* Top navigation (larger, higher) */
@@ -153,9 +154,6 @@
     <div>____________________________________<div>
       <div>About ↓<div>
   </div>
-        <div class="center-image">
-  <img src="Web_Photo_Editor.jpg" alt="Life collage">
-</div>
 <div class="about-content">
   <p>Hey, my name is Emmanuel Viray III.</p>
 
@@ -202,19 +200,30 @@
       Pimp Tobi
     </p>
 </div>
+<body>
 
-
-
+  <!-- FIXED collage (doesn't scroll) -->
+  <div id="life-collage">
+    <img src="Web_Photo_Editor.jpg" alt="Life collage">
   </div>
-</body>
-      <div class="contact-section">  
-        <p><a href="5106502646">(510) 650-2646</a></p>
-          <p> <a href="https://www.linkedin.com/in/emmanuel-viray/" target="_blank">LinkedIn</a></p>
-  <p><a href="https://github.com/emjviray" target="_blank">GitHub</a></p>
-                          <p><a href="mailto:emjviray@gmail.com">Email</a></p>
-                  <p> <a href="https://www.linkedin.com/in/emmanuel-viray/" target="_blank">X</a></p>
-                <p><a href="5106502646">Discord</a></p>
-  <p><a href="mailto:emmanuelviray@gmail.com">Spotify</a></p>
-</div>
 
+  <!-- Main page content -->
+  <div class="container">
+    <div class="about-content">
+      <!-- all your text (about, lists, etc.) -->
+    </div>
+
+    <!-- Contact links (usually fixed on right) -->
+    <div class="contact-section">
+      <p><a href="tel:5106502646">(510) 650-2646</a></p>
+      <p><a href="https://www.linkedin.com/in/emmanuel-viray/" target="_blank">LinkedIn</a></p>
+      <p><a href="https://github.com/emjviray" target="_blank">GitHub</a></p>
+      <p><a href="mailto:emjviray@gmail.com">Email</a></p>
+      <p><a href="https://x.com/..." target="_blank">X</a></p>
+      <p><a href="https://discord.com/..." target="_blank">Discord</a></p>
+      <p><a href="https://open.spotify.com/..." target="_blank">Spotify</a></p>
+    </div>
+  </div>
+
+</body>
 </html>
