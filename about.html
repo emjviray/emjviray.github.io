@@ -17,7 +17,7 @@
       background: #000000;
       color: #ffffff;
     }
-
+.container { position: relative; }
     /* Top navigation (larger, higher) */
     .about-content {
  width: 100%;
@@ -54,19 +54,22 @@
   margin-top: 40vh;
   font-size: 14px;
 }
-.image-center {
+.center-collage {
   position: absolute;
-  top: 55%;
   left: 50%;
+  top: 42%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  width: 520px;          /* adjust size */
+  max-width: 45vw;       /* responsive */
+  text-align: center;
 }
 
-.image-center img {
-  max-width: 700px;
+.center-collage img {
   width: 100%;
   height: auto;
+  display: block;
 }
+
 .info {
   margin-top: 220px;
   font-size: 13px;
@@ -180,7 +183,7 @@
       Weezer<br>
       The Smithts<br>
       Frank Ocean<br>
-      <div class="image-center">
+      <div class="center-collage">
   <img src="Web_Photo_editor.jpg" alt="Life collage">
 </div>
       Lil Pete<br>
