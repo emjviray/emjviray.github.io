@@ -6,6 +6,12 @@
   <title>emjviray</title>
 
   <style>
+    .inline-collage {
+  display: block;
+  width: 650px;        /* controls size */
+  max-width: 90%;
+  margin: 40px auto;  /* centers + adds spacing */
+}
     strong {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -193,6 +199,8 @@
       Frank Ocean<br>
       Lil Pete<br>
       Daboii<br>
+      <!-- Life collage inside content flow -->
+<img src="Web_Photo_Editor.jpg" alt="Life collage" class="inline-collage">
       Summrs<br>
       The Smashing Pumpkins<br>
       Radiohead<br>
@@ -210,13 +218,9 @@
       Shootergang Kony<br>
       Pimp Tobi
     </p>
+  <div style="clear: both;"></div>
 </div>
 <body>
-
-  <!-- FIXED collage (doesn't scroll) -->
-  <div id="life-collage">
-    <img src="Web_Photo_Editor.jpg" alt="Life collage">
-  </div>
 
   <!-- Main page content -->
   <div class="container">
