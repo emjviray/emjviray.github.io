@@ -17,7 +17,6 @@
       background: #000000;
       color: #ffffff;
     }
-.container { position: relative; }
     /* Top navigation (larger, higher) */
     .about-content {
  width: 100%;
@@ -54,17 +53,17 @@
   margin-top: 40vh;
   font-size: 14px;
 }
-.center-collage{
-  position: fixed;          /* <- stays in the empty space */
+.fixed-collage{
+  position: fixed !important;
   left: 50%;
-  top: 70%;                 /* move it into the bottom half */
+  top: 70%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
 }
 
-.center-collage img{
-  width: 520px;             /* adjust size */
+.fixed-collage img{
+  width: 520px;
   max-width: 45vw;
   height: auto;
   display: block;
@@ -184,9 +183,6 @@
       The Smithts<br>
       Frank Ocean<br>
       Lil Pete<br>
-      <div class="center-collage">
-  <img src="Web_Photo_Editor.jpg" alt="Life collage">
-</div>
       Daboii<br>
       Summrs<br>
       The Smashing Pumpkins<br>
@@ -206,6 +202,16 @@
       Pimp Tobi
     </p>
 </div>
+<body>
+
+  <!-- your page content here... -->
+
+  <!-- Put this at the very bottom of <body> -->
+  <div class="fixed-collage">
+    <img src="Web_Photo_Editor.jpg" alt="Life collage">
+  </div>
+
+</body>
 
 
 
