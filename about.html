@@ -6,6 +6,23 @@
   <title>emjviray</title>
 
   <style>
+    body {
+  position: relative;
+}
+
+/* Floating image */
+.floating-image {
+  position: absolute;
+  left: 50%;
+  top: 55vh;              /* adjust vertical placement */
+  transform: translateX(-50%);
+  pointer-events: none;  /* text stays selectable */
+}
+.floating-image img {
+  width: 620px;           /* make it big */
+  max-width: 90vw;
+  display: block;
+}
     .image-section {
   text-align: center;
   margin: 60px 0; /* space above & below */
@@ -175,7 +192,7 @@
       Optic Texas CoD
     </p>
 
-  <div class="image-section">
+  <div class="floating-image">
   <img src="Web_Photo_Editor.jpg" alt="Life collage">
 </div>
 
