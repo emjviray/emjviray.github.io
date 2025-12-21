@@ -55,21 +55,21 @@
   font-size: 14px;
 }
 .center-collage {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  top: 42%;
+  top: 45%;
   transform: translate(-50%, -50%);
-  width: 520px;          /* adjust size */
-  max-width: 45vw;       /* responsive */
+  z-index: 2;
   text-align: center;
+  pointer-events: none;
 }
 
 .center-collage img {
-  width: 100%;
+  width: 520px;        /* adjust size */
+  max-width: 40vw;     /* keeps it responsive */
   height: auto;
   display: block;
 }
-
 .info {
   margin-top: 220px;
   font-size: 13px;
@@ -157,6 +157,10 @@
     <div>____________________________________<div>
       <div>About ↓<div>
   </div>
+        <div class="center-collage">
+  <img src="Web_Photo_Editor.jpg" alt="Life collage">
+</div>
+
 <div class="about-content">
   <p>Hey, my name is Emmanuel Viray III.</p>
 
@@ -183,9 +187,6 @@
       Weezer<br>
       The Smithts<br>
       Frank Ocean<br>
-      <div class="center-collage">
-  <img src="Web_Photo_editor.jpg" alt="Life collage">
-</div>
       Lil Pete<br>
       Daboii<br>
       Summrs<br>
