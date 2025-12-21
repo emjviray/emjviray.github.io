@@ -54,19 +54,18 @@
   margin-top: 40vh;
   font-size: 14px;
 }
-.center-collage {
-  position: fixed;
+.center-collage{
+  position: fixed;          /* <- stays in the empty space */
   left: 50%;
-  top: 45%;
+  top: 70%;                 /* move it into the bottom half */
   transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
+  z-index: 1;
   pointer-events: none;
 }
 
-.center-collage img {
-  width: 520px;        /* adjust size */
-  max-width: 40vw;     /* keeps it responsive */
+.center-collage img{
+  width: 520px;             /* adjust size */
+  max-width: 45vw;
   height: auto;
   display: block;
 }
@@ -157,9 +156,6 @@
     <div>____________________________________<div>
       <div>About ↓<div>
   </div>
-        <div class="center-collage">
-  <img src="Web_Photo_Editor.jpg" alt="Life collage">
-</div>
 
 <div class="about-content">
   <p>Hey, my name is Emmanuel Viray III.</p>
@@ -188,6 +184,9 @@
       The Smithts<br>
       Frank Ocean<br>
       Lil Pete<br>
+      <div class="center-collage">
+  <img src="Web_Photo_Editor.jpg" alt="Life collage">
+</div>
       Daboii<br>
       Summrs<br>
       The Smashing Pumpkins<br>
