@@ -36,13 +36,113 @@
     .Projects a:hover {
       text-decoration: underline;
     }
+
+  .projects-list {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 50px;   /* space below the "My Projects" link */
+    text-align: center;
+  }
+
+  .divider {
+    width: 100%;
+    height: 2px;
+    background: #000;
+    margin: 0 auto;
+  }
+
+  .project {
+    padding: 28px 0;
+  }
+
+  .project-title {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .project-title:hover {
+    text-decoration: underline;
+  }
+
+  .project-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+</style>
+
   </style>
 </head>
 <body>
   <div class="container">
 
-    <div class="Projects">
-      <a href="projects.html">My Projects</a>
+    <div class="Projects">My Projects</div>
+
+  <div class="divider"></div>
+
+  <div class="project">
+    <a class="project-title" href="pitching_archetypes.html">The Five Pitching Archetypes</a>
+    <div class="project-desc">
+      Used Kmeans and PCA to evaluate how MLB pitchers perform across all MLB stadiums.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="project">
+    <a class="project-title" href="malicious_url_detector.html">Malicious URL Detector</a>
+    <div class="project-desc">
+      Built a usable Malicious URL Detector using Kmeans, Logistic Regression, and XGBoost.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="project">
+    <a class="project-title" href="ml_classifier_evaluation.html">Machine Learning Classifier Performance and Evaluation</a>
+    <div class="project-desc">
+      Measured and compared Accuracy and F1 score for Logistic Regression, Decision Trees,
+      Random Forests, K-Nearest Neighbors, and Support Vector Machines across four datasets.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="project">
+    <a class="project-title" href="ucsd_crime_rates.html">UC San Diego Student Impact on La Jolla's Crime Rates</a>
+    <div class="project-desc">
+      Analyzed UCSD enrollment and campus crime to identify correlations between student density
+      and crime rates using PANDAS.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="project">
+    <a class="project-title" href="ok_computer_beautiful.html">Why OK Computer is Beautiful</a>
+    <div class="project-desc">
+      Argued why OK Computer by Radiohead is objectively beautiful according to cognitive science research.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="project">
+    <a class="project-title" href="headphone_social_behavior.html">Headphone Usage on Social Behavior in Public Spaces</a>
+    <div class="project-desc">
+      Studying the cognitive implications of how the use of headphones in public spaces impacts social interactions.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+</div>
+
     </div>
 
 
