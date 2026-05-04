@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NBA Engineering</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    a {
+      color: blue;
+    }
+  </style>
+</head>
 
+<body>
+
+<h1>NBA Engineering</h1>
+
+<p style="text-align:center;">
+  Applied Artifical Intelligence Project Lead<br>
+  Cognitive Science - Machine Learning Undergraduate
+</p>
+
+<p style="text-align:center;">
+  <a href="https://github.com/AnthonyAbumanneh/NBA-ENGINEERING">GitHub Repository</a><br>
+</p>
+  <h3>Organizations:</h3>
+<p>
+Artifical Intelligence Collective - UC San Diego Chapter<br>
+COGS 185 - Advanced Machine Learning Algorithms<br>
+COGS 181 - Neural Networks<br>
+Department of Cognitive Science - University of California, San Diego
+</p>
+
+<h3>Contributors:</h3>
+<p>
+Anthony Abumanneh - AISC Project Team Member<br>
+Professor Zhuowen Tu - Cognitive Science Machine Learning Professor
+</p>
+
+<h3>Project Description:</h3>
+
+<h3>
+Developed a full machine learning pipeline to redesign NBA court geometry by optimizing three-point efficiency and restoring offensive diversity. 
+  Leveraged NBA shot-tracking data to model player shot behavior and scoring outcomes across variable court dimensions (3PT radius and baseline width). 
+  Implemented Kernel Density Estimation (KDE) to generate spatial shot distributions and simulate realistic shot locations, and trained a Feedforward Neural Network (MLP)
+  to learn nonlinear relationships between court geometry and expected scoring output. Used XGBoost (gradient boosted trees) to predict shot-level make probabilities 
+  based on location, player tendencies, and court parameters, and integrated a fatigue-adjusted Logistic Regression model to account for time-dependent performance decline.
+
+Central to the system is the Expected Points Per Game (EPPG) equation, which models scoring as a function of shot distribution and success probabilities:
+
+- a(r,w), b(r,w): proportions of 2PT vs 3PT attempts under court geometry
+- p2(r,w), p3(r,w): probability of making 2PT and 3PT shots
+- Combined into expected scoring weighted by shot value (2 vs 3 points)
+
+This probabilistic framework is used within a Monte Carlo simulation to generate full games (possessions, shot selection, outcomes), producing realistic scoring distributions across teams.
+An exhaustive grid search optimizer evaluates 200+ court configurations to identify the optimal geometry maximizing team three-point efficiency while maintaining balanced scoring (~200 total points per game).
+
+Result: Discovered an AI-optimized NBA court with extended three-point distance and increased width that significantly improves shooting efficiency and strategic shot selection.
+</h3>
+ <embed 
+  src="trikirby-paper.pdf" 
+  type="application/pdf" 
+  width="100%" 
+  height="900px"
+/>
+  
+
+<h3>Technical Skills:</h3>
+<p>
+Python, Machine Learning, Neural Networks, Feedforward Neural Networks (MLP), XGBoost, Gradient Boosted Trees, Logistic Regression, Monte Carlo Simulation,
+Kernel Density Estimation (KDE), Probability Modeling, Statistical Modeling, Data Analysis, Data Visualization, Feature Engineering, Optimization (Grid Search), Team Leadership, Communication, VS Code, GitHib,
+Simulation Modeling, Pandas, NumPy, Matplotlib, Seaborn, NBA API, Shot Data Processing, Spatial Data Analysis, Heatmaps, Mathematical Modeling, Expected Value Modeling (EPPG), Research & Development
+<p>
+
+  
+<h3>Project Timelines:</h3>
+<p>
+December 2025 - April 2026
+</p>
+
+<h3>Additional Links/Resources:</h3>
+<p>
+(Add anything else here if needed)
+</p>
+
+</body>
+</html>
