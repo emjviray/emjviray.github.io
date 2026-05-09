@@ -1,5 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experience</title>
 
-<section id="experience">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    /* HOME BUTTON */
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .home-button img {
+      width: 35px;
+      height: auto;
+      cursor: pointer;
+      padding: 6px;
+      background: white;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .home-button img:hover {
+      transform: scale(1.1);
+    }
+
+    /* EXPERIENCE CARDS */
+    .experience-card {
+      margin-bottom: 40px;
+    }
+
+    .experience-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 50px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .experience-header h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .role-info {
+      font-style: italic;
+      color: #555;
+      margin: 5px 0 10px 65px;
+    }
+
+    .experience-card p {
+      margin-left: 65px;
+      line-height: 1.6;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HOME BUTTON -->
+  <a href="index.html" class="home-button">
+    <img src="home.webp" alt="Home">
+  </a>
   <h2>My Experience</h2>
 
   <div class="experience-card">
