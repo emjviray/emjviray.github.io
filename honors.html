@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Honors</title>
 
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* HOME BUTTON */
+    .home-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+
+    .home-button img {
+      width: 50px;
+      height: auto;
+      cursor: pointer;
+      padding: 6px;
+      background: white;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .home-button img:hover {
+      transform: scale(1.1);
+    }
+
+    /* MAIN CONTENT WRAPPER */
+    .container {
+      max-width: 800px;
+      width: 100%;
+      padding: 40px 20px;
+    }
+
+    /* CENTER TITLE */
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* HONOR CARDS */
+    .honor-card {
+      margin-bottom: 40px;
+    }
+
+    .honor-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .honor-header h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .role-info {
+      font-style: italic;
+      color: #555;
+      margin: 5px 0 10px 0;
+    }
+
+    .honor-card p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HOME BUTTON -->
+  <a href="index.html" class="home-button">
+    <img src="home3.jpg" alt="Home">
+  </a>
+
+  <div class="container">
+
+    <h2>My Honors</h2>
+
+    <div class="honor-card">
+      <div class="honor-header">
+        <img src="ncs.jpeg" class="logo" style="width: 60px;">
+        <h3>2022 Varsity Baseball All-League Honors</h3>
+      </div>
+      <p class="role-info">Issued by Tri-County Athletic League (TCAL) North Coast Section (NCS) · Jun 2022 · Associated with Pinole Valley High School</p>
+      <p>
+        As a co-captain of Pinole Valley's varsity baseball team, I posted a .397 batting average and a .833 OPS over 64 plate appearances during my 2022 senior season. I led by example on and off the field
+        all year — from summer showcase tournaments and fall scrimmages to winter lift and spring season. I participated in post-practice workouts in the batting cages and maintained a competitive mindset 
+        that was contagious to our team's morale and winning culture. Our team's success was reflected in our winning record, earning an appearance in the North Coast Section Regional Tournament. I balanced 
+        my athletic commitments with academic responsibilities, demonstrating strong time management. Earning All-League was the culmination of 12+ years of hard work, discipline, and dedication to being the 
+        best at the sport I love. This experience deepened my understanding of leadership, winning culture, and the value of team cohesion.
+      </p>
+    </div>
+
+    <div class="honor-card">
+      <div class="honor-header">
+        <img src="pvhs.png" class="logo" style="width: 60px;">
+        <h3>2019 Engineering Rising Scholar Award</h3>
+      </div>
+      <p class="role-info">Issued by Director of PVHS Engineering Ms. Johnson · Apr 2019 · Associated with Pinole Valley High School</p>
+      <p>
+        I was honored with the Rising Scholar Award from our Engineering Academy during my freshman year. This award recognized my commitment to STEM and my role in representing the school at major engineering 
+        events. I showcased a self-driving line-following car that I built at the 2018 Bay Area Science Festival in San Francisco, where I demonstrated the project to the public and explained the design process. 
+        I also participated  in the 2019 PLTW One-Day Innovation Challenge, where my team developed a working prototype in a single day. We traveled to Sacramento to present our solution to judges, other competing 
+        NorCal high school engineering teams, and a live audience, which helped sharpen my public speaking and technical communication skills. These experiences taught me the value of clear presentation, teamwork, 
+        and creative engineering under pressure. I'm proud to have represented a small but passionate group of aspiring engineers from Pinole Valley on a regional stage. The Rising Scholar Award motivated me to 
+        continue pursuing engineering and to lead by example in future STEM opportunities.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
