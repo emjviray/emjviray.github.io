@@ -1,6 +1,3 @@
-
-Copy
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,24 +25,18 @@ Copy
     body {
   position: relative;
 }
- 
- 
- 
- 
- 
- 
- 
+/* Floating image */
+.floating-image {
+  position: absolute;
+  left: 50%;
+  top: 122vh;              /* adjust vertical placement */
+  transform: translateX(-50%);
+  pointer-events: none;  /* text stays selectable */
 }
-.music-row {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-.music-row img {
-  width: 420px;
-  max-width: 40vw;
+.floating-image img {
+  width: 505px;           /* make it big */
+  max-width: 90vw;
   display: block;
-  flex-shrink: 0;
 }
     strong {
   text-decoration: underline;
@@ -62,11 +53,10 @@ Copy
     .about-content {
  width: 100%;
   max-width: none;
- 
+
   margin: 0;
-  margin-top: 100vh;
   padding: 120px 60px 200px 60px;
- 
+
   text-align: left;
   font-size: 13px;
   line-height: 1.2;
@@ -84,17 +74,17 @@ Copy
       color: #000000;
       text-decoration: none;
     }
- 
+
     .nav a:hover {
       text-decoration: underline;
     }
 }
- 
+
 .name {
   margin-top: 40vh;
   font-size: 14px;
 }
- 
+
 .info {
   margin-top: 220px;
   font-size: 13px;
@@ -107,12 +97,12 @@ Copy
       font-size: 20px;
       text-align: center;
     }
- 
+
     .name a {
       color: #ffffff;
       text-decoration: none;
     }
- 
+
     .name a:hover {
       text-decoration: underline;
     }
@@ -125,7 +115,7 @@ Copy
   text-align: right;
   color: #ffffff;
   font-size: 13px;
- 
+
   font-size: 13px;
   line-height: 2.2;
 }
@@ -133,20 +123,20 @@ Copy
   margin-bottom: 0;
   padding-bottom: 0;
 }
- 
- 
+
+
 .contact-section hr {
   width: 100%;
   border: none;
   border-top: 1px solid #ffffff;
   margin-bottom: 14px;
 }
- 
+
 .contact-section a {
   color: #ffffff;
   text-decoration: none;
 }
- 
+
 .contact-section a:hover {
   text-decoration: underline;
 }
@@ -156,22 +146,22 @@ Copy
   border: none;
   border-top: 1px solid #ffffff;
 }
- 
+
   </style>
 </head>
- 
+
 <body>
   <div class="container">
- 
+
     <div class="nav">
       <a >Emmanuel </a> </a> 
     </div>
- 
+
     <div class="name">
       <a href="index.html">emjviray</a>
     </div>
 <div class="hero">
- 
+
   <div class="info">
 <div>21 (510)</div>
     <div>University of California, San Diego</div>
@@ -184,11 +174,11 @@ Copy
   </div>
 <div class="about-content">
   <p>Hey, my name is Emmanuel and I go by Emj.</p>
- 
+
     <p>I am a Filipino-American with a B.S. in Cognitive Science, Specializing in Machine Learning and Neural Computation from the University of California, San Diego. I want to help create impactful and innovative technology.</p>
- 
+
     <p>I grew up in the Hilltop district of Richmond, CA (East Bay Area) playing baseball and the drums. So naturally, my main interests are sports and music.</p>
- 
+
     <p><strong>Sports Teams:</strong><br>
       San Francisco Giants<br>
       Golden State Warriors<br>
@@ -196,8 +186,11 @@ Copy
       Redbull Racing F1<br>
       Optic Texas CoD
     </p>
-  <div class="music-row">
-    <p style="margin:0"><strong>Music Artists:</strong><br>
+  <div class="floating-image">
+  <img src="about.jpg" alt="Life collage">
+</div>
+
+    <p><strong>Music Artists:</strong><br>
       The Beatles<br>
       Green Day<br>
       Nirvana<br>
@@ -234,18 +227,16 @@ Copy
       Pimp Tobi<br>
       KeepItPeezy
     </p>
-    <img src="about.jpg" alt="Life collage">
-  </div>
   <div style="clear: both;"></div>
 </div>
 <body>
- 
+
   <!-- Main page content -->
   <div class="container">
     <div class="about-content">
       <!-- all your text (about, lists, etc.) -->
     </div>
- 
+
     <!-- Contact links (usually fixed on right) -->
     <div class="contact-section">
       <p><a href="tel:5106502646">(510) 650-2646</a></p>
@@ -261,7 +252,6 @@ Copy
     Thank you for your time.
   </a>
 </div>
- 
+
 </body>
 </html>
- 
